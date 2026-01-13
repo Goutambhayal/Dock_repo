@@ -1,0 +1,110 @@
+ .form-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: start;
+    height: calc(100vh - 123px);
+    overflow: hidden;
+    padding-bottom: 0px;
+}
+.top_30_gainers_container {
+    width: 30vw;
+    height:100vh;
+    overflow-y:scroll;
+    margin: 0vh;
+    background:white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    -ms-overflow-style: none;  /* IE & old Edge */
+    scrollbar-width: none;     /* Firefox */
+    padding-bottom: 125px;
+    padding-left:10px;
+}
+.top_30_gainers_container::-webkit-scrollbar {
+    width: 0px;  /* Chrome, Safari, Opera */
+    background: transparent; /* optional */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2vh;
+    color: #333;
+}
+.company-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+
+}
+.company-btn {
+    background: linear-gradient(90deg,white);
+    color: #333;
+    border: none;
+    height:50px;
+    border-radius: 10px;
+    padding: 7px 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.12);
+    transition: background 0.2s, box-shadow 0.2s;
+    width: 27vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+#com_name{
+    text-align: left;
+}
+.company-btn .company-price {
+    margin-left: 12px;
+    font-size: 1rem;
+    color: #50d382;
+    font-weight: 600;
+    min-width: 70px;
+    text-align: right;
+    display: inline-block;
+}
+.company-btn:hover {
+    background: linear-gradient(90deg,  #dcdbe4 100%);
+    box-shadow: 0 2px 8px rgba(102,126,234,0.15);
+}
+ 
+.gainers_graph_container {
+    background-color: rgb(221, 237, 246);
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 70vw;
+    margin-top: 0vh;
+    height: 100vh;
+    overflow-y: scroll; /* ensure consistent scrollbar behavior */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    padding:10px;
+    /* 👇 hide scrollbar cross-browser */
+    -ms-overflow-style: none;  /* IE & old Edge */
+    scrollbar-width: none;     /* Firefox */
+    padding-bottom: 125px;
+}
+
+.gainers_graph_container::-webkit-scrollbar {
+    width: 0px;  /* Chrome, Safari, Opera */
+    background: transparent; /* optional */
+}
+#barChart {
+  width: 600px;       /* or any size you want */
+  height: 400px;      /* or use vh/vw/% */
+  margin: 0 auto;     /* optional: center the chart */
+  overflow: hidden;   /* ensures it doesn’t spill */
+  position: relative;
+ 
+}
+.table{
+    width:30%;
+    background-color:#ffffff ;
+}
+.chart{
+    width:70%;
+}
+

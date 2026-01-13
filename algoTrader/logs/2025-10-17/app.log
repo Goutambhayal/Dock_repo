@@ -1,0 +1,41 @@
+[W 251017 09:29:42 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251017 09:32:48 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 09:32:48 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 09:32:48 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 13:37:46 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251017 15:35:33 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:35:33 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:35:33 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:35:34 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251017 15:35:44 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:35:44 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:35:44 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:36:54 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251017 15:37:04 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:37:04 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:37:04 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:37:24 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251017 15:37:34 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:37:34 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:37:34 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:37:54 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251017 15:38:04 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:38:04 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:38:04 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:38:24 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251017 15:38:34 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:38:34 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:38:34 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:38:54 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251017 15:39:04 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:39:04 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:39:04 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:39:24 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251017 15:39:34 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:39:34 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:39:34 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:39:54 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251017 15:40:04 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:40:04 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251017 15:40:04 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 251017 21:24:09 smartConnect:221] Error occurred while making a POST request to https://apiconnect.angelone.in/rest/auth/angelbroking/user/v1/loginByPassword. Headers: {'Content-type': 'application/json', 'X-ClientLocalIP': '127.0.0.1', 'X-ClientPublicIP': '106.193.147.98', 'X-MACAddress': '9c:da:3e:96:21:51', 'Accept': 'application/json', 'X-PrivateKey': '0I8E0SHk', 'X-UserType': 'USER', 'X-SourceID': 'WEB'}, Request: {'clientcode': 'G51826344', 'password': '8852', 'totp': '367637'}, Response: HTTPSConnectionPool(host='apiconnect.angelone.in', port=443): Read timed out. (read timeout=7)

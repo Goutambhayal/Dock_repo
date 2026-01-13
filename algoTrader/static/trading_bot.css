@@ -1,0 +1,21 @@
+#bot_header{
+    width:100vw;
+    height:5vh;
+    display:flex;
+}
+#intraday_container{
+    width:49vw;
+    height:5vh;
+    background-color: rgb(172, 165, 156);
+    text-align:center;
+    margin-left:0.5vw;
+    margin-right:0.5vw;
+}
+#fno_container{
+    width:49vw;
+    height:5vh;
+    background-color: rgb(172, 165, 156);
+    text-align:center;
+    margin-right:0.5vw;
+    margin-left:0.5vw;
+}

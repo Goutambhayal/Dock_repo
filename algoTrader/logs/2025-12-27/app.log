@@ -1,0 +1,25 @@
+[E 251227 12:15:43 smartConnect:221] Error occurred while making a GET request to https://apiconnect.angelone.in/rest/secure/angelbroking/user/v1/getProfile. Headers: {'Content-type': 'application/json', 'X-ClientLocalIP': '127.0.0.1', 'X-ClientPublicIP': '106.193.147.98', 'X-MACAddress': 'a4:4c:c8:55:9c:35', 'Accept': 'application/json', 'X-PrivateKey': '0I8E0SHk', 'X-UserType': 'USER', 'X-SourceID': 'WEB', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6Ikc1MTgyNjM0NCIsInJvbGVzIjowLCJ1c2VydHlwZSI6IlVTRVIiLCJ0b2tlbiI6ImV5SmhiR2NpT2lKU1V6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeVgzUjVjR1VpT2lKamJHbGxiblFpTENKMGIydGxibDkwZVhCbElqb2lkSEpoWkdWZllXTmpaWE56WDNSdmEyVnVJaXdpWjIxZmFXUWlPakV5TENKemIzVnlZMlVpT2lJeklpd2laR1YyYVdObFgybGtJam9pTldabU9UVTJOVEl0WWpZMk5DMHpNekptTFdGa01ERXRORGM0WTJRME5ETTVNREJtSWl3aWEybGtJam9pZEhKaFpHVmZhMlY1WDNZeUlpd2liMjF1WlcxaGJtRm5aWEpwWkNJNk1USXNJbkJ5YjJSMVkzUnpJanA3SW1SbGJXRjBJanA3SW5OMFlYUjFjeUk2SW1GamRHbDJaU0o5TENKdFppSTZleUp6ZEdGMGRYTWlPaUpoWTNScGRtVWlmWDBzSW1semN5STZJblJ5WVdSbFgyeHZaMmx1WDNObGNuWnBZMlVpTENKemRXSWlPaUpITlRFNE1qWXpORFFpTENKbGVIQWlPakUzTmpZNU1EUXpNeklzSW01aVppSTZNVGMyTmpneE56YzFNaXdpYVdGMElqb3hOelkyT0RFM056VXlMQ0pxZEdraU9pSTNaREJpTWpNMll5MHpaREZoTFRRNU5UVXRZVEl4WXkxak1tSXhZMll4TURWa05HUWlMQ0pVYjJ0bGJpSTZJaUo5LnVqV1JtSXlxNC0zbGJ1a0V2dzl3UTgtbTNVVVZyUHFieGp0UlMwOTRXemt1ekNvU0l5WTN2SE5vS19PUndoS0g3eUpYTkxKV2k1LWhIcWJYWnJpbmdvcVVSTW12M3B6VnlqN0gyR1VuZ25xRXVxOEtjUTI2T1Z1ZUFPekJZMk5ieXJ5MUZEXzR3VDgxZEpOd1JFbTFwak9lUkg3eURXRnpGaW1hbFBGMGF5SSIsIkFQSS1LRVkiOiIwSThFMFNIayIsIlgtT0xELUFQSS1LRVkiOnRydWUsImlhdCI6MTc2NjgxNzkzMiwiZXhwIjoxNzY2ODYwMjAwfQ.q9zbnpZWuPsywKB_GoeesoYJKdu-T9twrtHTFU_gbxRc25AtMCdsDOOWY5wyC1KaQAmgfQm8HN-P-uHebqUH2Q'}, Request: {'refreshToken': 'eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbiI6IlJFRlJFU0gtVE9LRU4iLCJSRUZSRVNILVRPS0VOIjoiZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5WDNSNWNHVWlPaUpqYkdsbGJuUWlMQ0owYjJ0bGJsOTBlWEJsSWpvaWRISmhaR1ZmY21WbWNtVnphRjkwYjJ0bGJpSXNJbWR0WDJsa0lqb3dMQ0p6YjNWeVkyVWlPaUl6SWl3aVpHVjJhV05sWDJsa0lqb2lOV1ptT1RVMk5USXRZalkyTkMwek16Sm1MV0ZrTURFdE5EYzRZMlEwTkRNNU1EQm1JaXdpYTJsa0lqb2lkSEpoWkdWZmEyVjVYM1l5SWl3aWIyMXVaVzFoYm1GblpYSnBaQ0k2TUN3aWFYTnpJam9pYkc5bmFXNWZjMlZ5ZG1salpTSXNJbk4xWWlJNklrYzFNVGd5TmpNME5DSXNJbVY0Y0NJNk1UYzJOamt3TkRNek1pd2libUptSWpveE56WTJPREUzTnpVeUxDSnBZWFFpT2pFM05qWTRNVGMzTlRJc0ltcDBhU0k2SW1ZeE9UQXhZalJtTFdFeE5tTXROREV3TUMwNU5ERm1MVGswTnpCbE1HUXlOR1JqTkNJc0lsUnZhMlZ1SWpvaUluMC5UcjFoMEQybFl6bW9RbEdvRGdkQW1xXzNfaXRpaVgwbEFNQk9aMFIzcWY2bjQzQ250aGhsUF8zTVk5X09xUUozX1llMURnQXdiV3lUS0FxWjZLY1hoUlhHNmcyTEpwUEFQMzVnSjBWcUJjZDJGdkg1bzM0eEota3FCSkViVU1lM2ZWYjJFXy15LWpLSTVYcXF1d09KclM0YmFZdE9BZm5tS3hMaHV3clNzQXMiLCJpYXQiOjE3NjY4MTc5MzJ9.ZpdSaYtYXxnKREzqjEUQ592qW1OCrS3Y4eegKBa2hc7smCGJOllAppO-vmzrCpsaauMNSxiXzLQ7Q4VzS_1GNg'}, Response: HTTPSConnectionPool(host='apiconnect.angelone.in', port=443): Read timed out. (read timeout=7)
+[W 251227 12:27:15 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251227 12:27:26 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:27:26 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:27:26 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:27:46 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251227 12:27:57 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:27:57 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:27:57 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:28:15 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251227 12:28:27 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:28:27 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:28:27 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:28:45 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251227 12:28:55 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:28:55 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:28:56 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:29:15 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251227 12:29:25 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:29:25 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:29:25 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:29:45 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251227 12:29:55 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:29:55 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251227 12:29:55 smartWebSocketV2:343] Connection closed due to max retry attempts reached.

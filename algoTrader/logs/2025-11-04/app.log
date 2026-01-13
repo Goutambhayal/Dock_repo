@@ -1,0 +1,54 @@
+[E 251104 08:00:36 smartConnect:221] Error occurred while making a POST request to https://apiconnect.angelone.in/rest/auth/angelbroking/user/v1/loginByPassword. Headers: {'Content-type': 'application/json', 'X-ClientLocalIP': '127.0.0.1', 'X-ClientPublicIP': '106.193.147.98', 'X-MACAddress': '9c:da:3e:96:21:51', 'Accept': 'application/json', 'X-PrivateKey': '0I8E0SHk', 'X-UserType': 'USER', 'X-SourceID': 'WEB'}, Request: {'clientcode': 'G51826344', 'password': '8852', 'totp': '469757'}, Response: HTTPSConnectionPool(host='apiconnect.angelone.in', port=443): Max retries exceeded with url: /rest/auth/angelbroking/user/v1/loginByPassword (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F1519EF710>: Failed to resolve 'apiconnect.angelone.in' ([Errno 11001] getaddrinfo failed)"))
+[W 251104 10:00:21 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251104 10:05:10 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 10:05:10 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 10:05:10 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:09:33 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251104 11:15:07 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:15:07 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:15:07 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:18:51 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251104 11:19:22 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:19:22 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:19:22 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:19:57 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251104 11:20:07 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:20:07 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:20:07 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:22:42 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[E 251104 11:23:36 smartWebSocketV2:212] Error occurred during subscribe: socket is already closed.
+[W 251104 11:23:37 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251104 11:23:39 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:23:39 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:23:39 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:23:39 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 251104 11:23:52 smartWebSocketV2:212] Error occurred during subscribe: socket is already closed.
+[W 251104 11:23:54 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:23:54 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:23:54 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:23:54 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:23:55 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[E 251104 11:23:58 smartWebSocketV2:212] Error occurred during subscribe: socket is already closed.
+[W 251104 11:23:58 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[E 251104 11:24:34 smartWebSocketV2:212] Error occurred during subscribe: socket is already closed.
+[W 251104 11:24:37 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:24:37 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:24:37 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:24:37 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:25:06 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251104 11:25:16 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:25:16 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:25:16 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:25:16 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:25:37 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:25:37 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 11:25:37 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 12:40:08 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251104 12:40:18 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 12:40:18 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 12:40:18 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 12:49:58 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 251104 13:03:35 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 13:03:35 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 13:03:35 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 251104 14:31:35 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...

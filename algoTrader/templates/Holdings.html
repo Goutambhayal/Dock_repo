@@ -1,0 +1,10 @@
+{% load static%}
+{% include 'header.html'%}
+{% block content %}
+
+{% comment %} <h3 style=" top-margin:2px">You don't have any Holdings</h3> {% endcomment %}
+<script >
+    document.getElementById("form-container").innerHTML ="<h3 style='top-margin:2px'>You don't have any Holdings</h3>";
+</script>
+{% endblock %}
+{% include 'footer.html'%}

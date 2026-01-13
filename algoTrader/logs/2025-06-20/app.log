@@ -1,0 +1,12 @@
+[W 250620 12:50:42 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[E 250620 13:00:58 smartWebSocketV2:212] Error occurred during subscribe: Object of type set is not JSON serializable
+[W 250620 13:00:58 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[E 250620 13:01:09 smartWebSocketV2:212] Error occurred during subscribe: 'set' object has no attribute 'extend'
+[W 250620 13:01:09 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 250620 13:01:09 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 250620 13:01:09 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 250620 13:01:09 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[W 250620 13:01:09 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 250620 13:01:23 smartWebSocketV2:212] Error occurred during subscribe: 'set' object has no attribute 'extend'
+[E 250620 13:04:38 smartConnect:246] Error occurred while making a POST request to https://apiconnect.angelone.in/rest/secure/angelbroking/order/v1/placeOrder. Error: The order cannot be processed as the token is categorised under cautionary listings by the exchange.. URL: https://apiconnect.angelone.in/rest/secure/angelbroking/order/v1/placeOrder, Headers: {'Content-type': 'application/json', 'X-ClientLocalIP': '127.0.0.1', 'X-ClientPublicIP': '106.193.147.98', 'X-MACAddress': '9c:da:3e:96:21:51', 'Accept': 'application/json', 'X-PrivateKey': '0I8E0SHk', 'X-UserType': 'USER', 'X-SourceID': 'WEB'}, Request: {'variety': 'NORMAL', 'tradingsymbol': 'QPOWER-EQ', 'symboltoken': '29711', 'transactiontype': 'SELL', 'exchange': 'NSE', 'ordertype': 'LIMIT', 'producttype': 'INTRADAY', 'duration': 'DAY', 'price': 574.0, 'quantity': 1}, Response: {'message': 'The order cannot be processed as the token is categorised under cautionary listings by the exchange.', 'errorcode': 'AB4036', 'status': False, 'data': None}
+[E 250620 13:04:38 smartConnect:339] API request failed: {'message': 'The order cannot be processed as the token is categorised under cautionary listings by the exchange.', 'errorcode': 'AB4036', 'status': False, 'data': None}

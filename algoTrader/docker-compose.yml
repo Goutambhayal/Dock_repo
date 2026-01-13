@@ -1,0 +1,51 @@
+
+services:
+# 1. Redis (Used by Channels and Celery)
+  redis:
+    image: redis:7.4-alpine
+    restart: always
+  # 1. The Database
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_USER: goutam_bhayal
+      MYSQL_DATABASE: algo_trader_db
+      MYSQL_PASSWORD: PeAcE@123
+      MYSQL_ROOT_PASSWORD: PeAcE@123
+    ports:
+      - "3307:3306"
+    
+
+  # 3. The Django Web App
+  
+
+  # 4. Celery Worker
+  worker:
+    build: .
+    command: sh -c "sleep 30 && celery -A algoTrader worker --loglevel=info"
+    depends_on:
+      - db
+      - redis
+
+  # 5. Celery Beat
+  beat:
+    build: .
+    command: sh -c "sleep 40 && celery -A algoTrader beat --loglevel=info"
+    depends_on:
+      - db
+      - redis
+  web:
+    build: .
+    command: sh -c "sleep 20 && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/ALGO_TRADER
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_HOST=db
+      - REDIS_HOST=redis
+    
+    depends_on:
+      - redis
+      - db

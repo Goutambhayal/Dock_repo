@@ -1,0 +1,41 @@
+{% extends 'base1.html'%}
+{% load static %}
+
+{% block content %}
+
+    <link rel="stylesheet" href="{% static 'allCompanies.css' %}">
+     {% comment %} <div class="all_company_container">
+            <div class="market-container">
+                <h1>Market Watch</h1>
+                <div class="company-list" id="companyList"></div>
+            </div>
+            <div class="graph-container">
+                <div id="companyInfoArea">
+                    <div class="chart-title">
+                        <div class="comp_data1">
+                            <div class="comp_name1" id="companyName">Company Name</div>
+                            <div class="comp_name1"> 
+                                <div class="comp_name2" id="companyPrice">&#8377;11,000</div>
+                                <div class="price_data">
+                                    <div id="priceChange">price change</div>
+                                    <div id="percentChange">percent change</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comp_data">
+                            <div class="comp_name" id="highPrice">1D high: &#8377;5500</div>
+                            <div class="comp_name" id="lowPrice">1D low: &#8377;5440</div>  
+                        </div>
+                    </div>    
+                    <div class="chart-half-width">
+                        <div id="chart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+    </div>  {% endcomment %}
+     <script src="{% static 'allCompany.js' %}" defer></script>
+     <script src="https://cdn.plot.ly/plotly-2.35.3.min.js"></script>
+     {% comment %} <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>  {% endcomment %}
+{% endblock %}  
+
+
