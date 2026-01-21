@@ -148,13 +148,13 @@ CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
-            "hosts": [("redis", 6379)],
+            "hosts": [(os.environ.get('REDIS_HOST', 'redis'), 6379)],
         },
     },
 }
 
 # Celery Configuration
-CELERY_BROKER_URL = 'redis://redis:6379/0'
+CELERY_BROKER_URL = f"redis://{os.environ.get('REDIS_HOST', 'redis')}:6379/0"
 #CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
@@ -172,7 +172,7 @@ ANGEL_ONE_API_KEY = "0I8E0SHk"
 ANGEL_ONE_CLIENT_CODE = "G51826344"
 ANGEL_ONE_PASSWORD = "8852"
 ANGEL_ONE_TOTP_SECRET = "773ESBTPTR4XCYRUDGTTQAH3KE"
-REDIS_HOST = 'redis'  # or Redis server IP if hosted remotely
+REDIS_HOST = os.environ.get('REDIS_HOST', 'redis')  # or Redis server IP if hosted remotely
 REDIS_PORT = 6379
 REDIS_DB = 0
 REDIS_PASSWORD = None
