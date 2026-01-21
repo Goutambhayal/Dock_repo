@@ -102,7 +102,7 @@ def place_order(symbol_token, details):
         return None
 @shared_task
 def main1():
-    global sws1, subscribed_tokens
+    global sws1
 
     # Initial setup
     tokens = get_tokens()
@@ -128,7 +128,6 @@ def main1():
             logger.error(f"Error in on_data: {str(e)}")
 
     def on_open(wsapp):
-        global subscribed_tokens
         logger.info("WebSocket connected. Subscribing to initial tokens.")
         
         token_list = [{"exchangeType": 1, "tokens": list(subscribed_tokens)}]
