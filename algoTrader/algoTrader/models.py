@@ -1,60 +1,82 @@
 from django.db import models
+    
+class ChartPriceData(models.Model):
+    company_token = models.CharField(max_length=20)
+    price_time = models.TimeField()
+    price = models.DecimalField(max_digits=10, decimal_places=2)
 
-# class Order(models.Model):
-#     ORDER_STATUS = (
-#         ('PENDING', 'Order Pending'),
-#         ('PLACED', 'Order Placed'),
-#         ('EXECUTED', 'Order Executed'),
-#         ('REJECTED', 'Order Rejected'),
-#         ('CANCELLED', 'Order Cancelled'),
-#         ('ERROR', 'Error'),
-#     )
+    class Meta:
+        db_table = "chart_price_data"
+        constraints = [
+            models.UniqueConstraint(
+                fields=["company_token", "price_time"],
+                name="unique_company_time"
+            )
+        ]
 
-#     ORDER_TYPES = (
-#         ('PLACE', 'Place Order'),
-#         ('EXIT', 'Exit Order'),
-#         ('MODIFY', 'Modify Order'),
-#     )
+    def __str__(self):
+        return f"{self.company_token} @ {self.price_time} = {self.price}"
 
-#     order_id = models.CharField(max_length=50, blank=True, null=True)  # Angel One order ID
-#     task_id = models.CharField(max_length=50)  # Celery task ID
-#     symbol = models.CharField(max_length=50)
-#     quantity = models.IntegerField()
-#     price = models.DecimalField(max_digits=10, decimal_places=2)
-#     transaction_type = models.CharField(max_length=4)  # BUY or SELL
-#     order_type = models.CharField(max_length=10, choices=ORDER_TYPES)
-#     status = models.CharField(max_length=10, choices=ORDER_STATUS, default='PENDING')
-#     error_message = models.TextField(blank=True, null=True)
-#     created_at = models.DateTimeField(auto_now_add=True)
-#     updated_at = models.DateTimeField(auto_now=True)
+class CompanyData(models.Model):
+    company_name = models.CharField(max_length=70,null=True)
+    symbol_name = models.CharField(max_length=30,null=True)
+    symbol_token = models.CharField(max_length=20)
+    market_capitalization = models.CharField(max_length=30)
+    initial_price = models.DecimalField(
+        max_digits=10,
+        decimal_places=2,
+        null=True,
+        blank=True
+    )
 
-#     class Meta:
-#         ordering = ['-created_at']
+    last_day_price = models.DecimalField(
+        max_digits=10,
+        decimal_places=2,
+        null=True,
+        blank=True
+    )
 
-#     def __str__(self):
-#         return f"{self.transaction_type} {self.symbol} - {self.status}" 
-# class intradayPrices(models.Model):
-#     company_token = models.CharField(max_length=20)   # or IntegerField if numeric
-#     price_time = models.DateTimeField()
-#     price = models.DecimalField(max_digits=10, decimal_places=2)
-
-#     class Meta:
-#         db_table = "Intraday_prices"   # so Django uses your existing table name
-#         indexes = [
-#             models.Index(fields=["company_token", "price_time"]),
-#         ]
-
-#     def __str__(self):
-#         return f"{self.company_token} - {self.price} at {self.price_time}"
-class all_companies(models.Model):
-    company_name=models.CharField(max_length=35)
-    symbol_name =models.CharField(max_length=20)
-    symbol_token=models.CharField(max_length=20)
-    market_capitalization = models.CharField(max_length=15)
 
     class Meta:
         db_table = "company_data"
+
     def __str__(self):
-        return self.company_name
-    
-        
+        return f"{self.company_name} ({self.symbol_name})"
+
+
+
+
+class PriceFluctuationData(models.Model):
+    date = models.DateField()
+    token = models.CharField(max_length=20)
+
+    initial_price = models.DecimalField(
+        max_digits=10, decimal_places=2, null=True, blank=True
+    )
+
+    g_up_h = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+    g_up_l = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+    up_gap = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+
+    g_down_h = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+    g_down_l = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+    down_gap = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+
+    final_percent_gain = models.DecimalField(
+        max_digits=6, decimal_places=2, null=True, blank=True
+    )
+
+    d_high = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+    d_low = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+
+    class Meta:
+        db_table = "price_fluctuation_data"
+        constraints = [
+            models.UniqueConstraint(
+                fields=["date", "token"],
+                name="unique_price_fluctuation_date_token"
+            )
+        ]
+
+    def __str__(self):
+        return f"{self.token} | {self.date}"

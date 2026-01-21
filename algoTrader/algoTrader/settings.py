@@ -120,11 +120,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
-USE_TZ = True
+# Disable UTC for Django
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
@@ -159,7 +160,7 @@ CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'Asia/Kolkata'
-
+CELERY_ENABLE_UTC = False           # Important: use local timezone instead of UTC
 SMARTAPI_CONFIG={
                "ANGEL_ONE_API_KEY": "0I8E0SHk",
     "ANGEL_ONE_CLIENT_CODE": "G51826344",
