@@ -87,11 +87,11 @@ WSGI_APPLICATION = 'algoTrader.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'algo_trader_db',  # Your database name
-        'USER':'goutam_bhayal',     # Your MySQL username
-        'PASSWORD':'PeAcE@123',  # Your MySQL password
-        'HOST': 'db',  # Database host, 'localhost' for local development
-        'PORT': '3306',      # MySQL port (default: 3306)
+        'NAME': os.environ.get('DB_NAME', 'algo_trader_db'),
+        'USER': os.environ.get('DB_USER', 'goutam_bhayal'),
+        'PASSWORD': os.environ.get('DB_PASSWORD', 'PeAcE@123'),
+        'HOST': os.environ.get('DB_HOST', 'db'),
+        'PORT': os.environ.get('DB_PORT', '3306'),
     }
 }
 
