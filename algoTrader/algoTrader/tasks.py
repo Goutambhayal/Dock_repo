@@ -15,6 +15,7 @@ import pytz
 from .celery import app
 from channels.layers import get_channel_layer
 from asgiref.sync import async_to_sync
+from django.conf import settings
 
 
 
@@ -24,9 +25,21 @@ logger = logging.getLogger(__name__)
 # Global WebSocket instance
 sws1 = None
 
-# Initialize Redis for sharing data between tasks
-redis_client = redis.Redis(host='redis', port=6379, db=0,decode_responses=True)
-r=redis_client
+redis_client = None
+
+def get_redis_client():
+    global redis_client
+    if redis_client is None:
+        redis_client = redis.Redis(
+            host=settings.REDIS_HOST,
+            port=settings.REDIS_PORT,
+            db=0,
+            decode_responses=True
+        )
+    return redis_client
+
+# use it when needed
+r = get_redis_client()
 
 # Initialize Angel One service
 angel_services = AngelOneService.get_instance()
